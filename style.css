@@ -27,6 +27,8 @@ body {
     transition: .5s;
     display: flex;
     flex-direction: row;
+    background-color: rgba(30, 30, 30, 0.312);
+    border-bottom: .1vh solid white;
 }
 
 #headerBlock:hover {
@@ -67,6 +69,20 @@ body {
     cursor: pointer;
 }
 
+.menuDiv {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#menuImg {
+    width: 10vw;
+    height: 10vw;
+}
+
 
 
 
@@ -82,6 +98,8 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 415px) {
+
+    /* Header Block [ TOP ] */
     .headerDiv {
         height: 10vh;
     }
@@ -101,5 +119,15 @@ body {
     #imgHeader {
         width: 8vw;
         height: 8vw;
+    }
+    
+    .menuDiv {
+        visibility: visible;
+        width: 20%;
+    }
+
+    #menuImg {
+        width: 15vw;
+        height: 15vw;
     }
 }
