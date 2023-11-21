@@ -5,10 +5,64 @@
 * {
     padding: 0;
     margin: 0;
+    cursor: default;
 }
 
-/* BODY BLOCK */
+/* Body / Background [ BLOCK ] */
 
 body {
     background-color: black;
+}
+
+/* Header [ BLOCK ] */
+
+.headerDiv {
+    width: 100%;
+    height: 15vh;
+}
+
+#headerBlock {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+}
+
+#headerBlock:hover {
+    background-color: #827849;
+    border-bottom: 1vh solid white;
+    box-shadow: 0 0 5vh #827849;
+}
+
+.titleDiv {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#headerTitle {
+    font-size: 2em;
+    color: white;
+    line-height: 3.25em;
+    text-align: center;
+    width: 100%
+}
+
+.imageDiv {
+    width: 8%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgHeader {
+    width: 5vw;
+    height: 5vw;
+}
+
+#imgHeader:hover {
+    cursor: pointer;
 }
