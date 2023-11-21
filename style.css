@@ -1,0 +1,14 @@
+/* CSS Styling Code */
+
+/* Css Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY BLOCK */
+
+body {
+    background-color: black;
+}
