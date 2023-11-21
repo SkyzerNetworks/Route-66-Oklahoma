@@ -1,6 +1,20 @@
-/* CSS Styling Code */
+/* Author Name - SkyzerNetworks */
+/* Copyright - © 2023 skyzernetworks@gmail.com */
+/* Source Code - https://github.com/SkyzerNetworks/Route-66-Oklahoma.github.io */
+/* Description - [ A useful site to show the background story of Route 66 in Oklahoma around the time to travel west! ]
+/* Citation Information - [ LINK ]
 
-/* Css Reset */
+/* Vocabulary Dictionary: */
+
+/* Block / Top = The format of sections to display certain information (ex: header - show the title and helpful links) */
+
+/* __________________________________________________________________________________________ */
+/* -------------------------------- CSS Styling Code ---------------------------------------- */ 
+/* __________________________________________________________________________________________ */
+
+/* --------- */
+/* CSS Reset */
+/* --------- */
 
 * {
     padding: 0;
@@ -8,13 +22,17 @@
     cursor: default;
 }
 
+/* --------------------------- */
 /* Body / Background [ BLOCK ] */
+/* --------------------------- */
 
 body {
     background-color: black;
 }
 
+/* ---------------- */
 /* Header [ BLOCK ] */
+/* ---------------- */
 
 .headerDiv {
     width: 100%;
@@ -86,16 +104,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
+/* ------------- */
 /* MEDIA QUERIES */
+/* ------------- */
 
 @media screen and (max-width: 415px) {
 
