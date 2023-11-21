@@ -27,5 +27,15 @@
 /* --------------------------- */
 
 body {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(184, 151, 33);
+}
+
+/* --------------------- */
+/* Link Holder [ BLOCK ] */
+/* --------------------- */
+
+.linkHolder {
+    width: 50vw;
+    height: 80%;
+    background-color: black;
 }
