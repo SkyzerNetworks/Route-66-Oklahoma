@@ -74,6 +74,8 @@ body {
 
 .textBox a {
     text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .textBox h3:hover {
