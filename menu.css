@@ -20,7 +20,6 @@
     padding: 0;
     margin: 0;
     cursor: default;
-    overflow: hidden;
 }
 
 /* --------------------------- */
@@ -28,7 +27,8 @@
 /* --------------------------- */
 
 body {
-    background-color: rgb(184, 151, 33);
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
 }
 
 /* --------------------- */
@@ -37,16 +37,15 @@ body {
 
 .linkHolder {
     width: 100%;
-    height: 50vw;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
 
 #linkBox {
-    width: 40vw;
-    height: 50vw;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +53,7 @@ body {
 }
 
 .textBox {
-    width: 100%;
+    width: 90%;
     height: 10%;
     padding: 1.5vw;
     color: white;
@@ -78,4 +77,41 @@ body {
     color: #827849;
     text-shadow: 0 0 .7vw #4b452b;
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media screen and (max-width: 415px) {
+    .linkHolder {
+        width: 100%;
+        height: 100%;
+    }
+
+    #linkBox {
+        width: 95%;
+        height: 90%;
+    }
+
+    .textBox h1 {
+        font-size: 8vw;
+    }
+    
+    .textBox h3 {
+        cursor: pointer;
+        font-size: 6vw;
+        transition: 0.5s;
+    }
+
+    .textBox h3:hover {
+        font-size: 7vw;
+    }
 }
