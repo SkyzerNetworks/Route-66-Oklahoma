@@ -56,7 +56,6 @@ body {
     width: 90%;
     height: 10%;
     padding: 1.5vw;
-    color: white;
     font-size: 1.5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -64,11 +63,13 @@ body {
 
 .textBox h1 {
     font-size: 3vw;
+    color: white;
 }
 
 .textBox h3 {
     cursor: pointer;
     transition: 0.5s;
+    color: white;
 }
 
 .textBox a {
