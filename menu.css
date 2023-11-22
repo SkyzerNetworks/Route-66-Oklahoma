@@ -71,6 +71,10 @@ body {
     transition: 0.5s;
 }
 
+.textBox a {
+    text-decoration: none;
+}
+
 .textBox h3:hover {
     cursor: pointer;
     font-size: 2vw;
