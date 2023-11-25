@@ -101,8 +101,62 @@ body {
     height: 10vw;
 }
 
+/* ------------- */
+/* Nav [ BLOCK ] */
+/* ------------- */
 
+.navDiv {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    visibility: visible;
+    display: flex;
+}
 
+#navBlock {
+    width: 100%;
+    height: 100%;
+    background-color: #38341f;
+    border-top: .1vw solid white;
+    border-bottom: .1vw solid white;
+    display:flex;
+    visibility: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+#navContentHold {
+    width: 99%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.navButton {
+    width: 20%;
+    height: 100%;
+    padding: .5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: .1vw solid white;
+    border-right: .1vw solid white;
+    background-color: #000000b5;
+}
+
+.navButton h2 {
+    color: white;
+    text-shadow: 2px 2px 5px white;
+    transition: 0.5s;
+    font-size: 2vw;
+}
+
+.navButton h2:hover {
+    font-size: 2.5vw;
+    text-shadow: 3px 3px 8px #857b48;
+}
 
 /* ------------- */
 /* MEDIA QUERIES */
@@ -140,5 +194,11 @@ body {
     #menuImg {
         width: 15vw;
         height: 15vw;
+    }
+
+    /* Nav Block [ TOP ] */
+
+    .navDiv {
+        visibility: hidden;
     }
 }
