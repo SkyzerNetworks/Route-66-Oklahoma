@@ -172,7 +172,7 @@ body {
 #sectionBlock {
     width: inherit;
     height: inherit;
-    background-image: url("/close-up-desert-with-lot-sand-generative-ai_899870-35987.png");
+    background-image: url("close-up-desert-with-lot-sand-generative-ai_899870-35987.png");
     background-size: 20vw;
     box-shadow: 0 0 500px black inset;
     filter: saturate(70%);
