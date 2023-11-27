@@ -235,6 +235,10 @@ body {
     color: #ffed92;
 }
 
+#phoneButtonDiv {
+    display: none;
+}
+
 /* ---------------- */
 /* Footer [ BLOCK ] */
 /* ---------------- */
@@ -242,14 +246,13 @@ body {
 .footerDiv {
     width: 100%;
     height: 8.4vw;
-    border-top: .1vw solid white;
 }
 
 #footerBlock {
     width: 100%;
     height: 100%;
-    border-top: .1vw solid white;
     background-image: linear-gradient(10deg, #1f1f1f, #6e6344);
+    border-top: .3vh solid white;
 }
 
 /* ------------- */
@@ -294,7 +297,71 @@ body {
 
     .navDiv {
         visibility: hidden;
+        display: none;
     }
 
     /* Section Block [ MIDDLE ] */
+
+    .sectionDiv {
+        position: relative;
+        top: 0vh;
+    }
+    
+    #sectionItemContainer {
+        flex-flow: wrap;
+        gap: 9vw;
+    }
+
+    .sectionItem {
+        width: 40%;
+        height: 16vh;
+    }
+
+    #timelineContainer {
+        display: none;
+    }
+
+    #phoneButtonDiv {
+        position: absolute;
+        top: 24vh;
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        gap: 1vh;
+    }
+
+    #holderSection2 {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 6vh;
+        gap: 28vw;
+    }
+    
+    #holderSection1 {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 28vh;
+        gap: 28vw;
+    }
+
+    .dateButton {
+        font-size: 2vw;
+    }
+    /* Footer Block [ BOTTOM ] */
+
+    .footerDiv {
+        height: 29.8vh;
+    }
+
+    #footerBlock {
+        border-top: .1vh solid white;
+    }
 }
