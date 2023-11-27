@@ -319,6 +319,12 @@ body {
 
     #timelineContainer {
         display: none;
+        visibility: collapse;
+    }
+
+    #timelineContainer .dateButton {
+        display: none;
+        visibility: collapse;
     }
 
     #phoneButtonDiv {
