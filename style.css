@@ -172,11 +172,84 @@ body {
 #sectionBlock {
     width: inherit;
     height: inherit;
-    background-image: url("close-up-desert-with-lot-sand-generative-ai_899870-35987.png");
-    background-size: 20vw;
+    background-image: url("https://pixeljoint.com/files/icons/full/desertmockup.png");
+    background-size: 30vw;
     box-shadow: 0 0 500px black inset;
     filter: saturate(70%);
     border-top: .1vw solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#sectionItemContainer {
+    height: 65%;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.sectionItem {
+    width: 20%;
+    height: 16vw;
+    background-image:linear-gradient(50deg, #000000d8,#3d382066,rgba(37, 37, 37, 0.69));
+    border-radius: .5vw;
+    border: .1vw solid #ffed92;
+    box-shadow: 0 0 2vw black, 0 0 2vw inset rgb(0, 0, 0);
+}
+
+#timelineContainer {
+    height: 30%;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.dateButton {
+    width: 20%;
+    height: 5vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5vw;
+    border: .1vw solid #ffed92;
+    box-shadow: 0 0 2vw black, 0 0 2vw inset rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.dateButton:hover {
+    width: 21%;
+    height: 6vw;
+    box-shadow: 0 0 2vw #a69011, 0 0 2vw inset rgb(0, 0, 0);
+    font-size: 1.5vw;
+}
+
+.dateButton h1 {
+    color: #ffed92;
+}
+
+/* ---------------- */
+/* Footer [ BLOCK ] */
+/* ---------------- */
+
+.footerDiv {
+    width: 100%;
+    height: 8.4vw;
+    border-top: .1vw solid white;
+}
+
+#footerBlock {
+    width: 100%;
+    height: 100%;
+    border-top: .1vw solid white;
+    background-image: linear-gradient(10deg, #1f1f1f, #6e6344);
 }
 
 /* ------------- */
