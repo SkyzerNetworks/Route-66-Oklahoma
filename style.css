@@ -223,6 +223,8 @@ body {
     border: .1vw solid #ffed92;
     box-shadow: 0 0 2vw black, 0 0 2vw inset rgb(0, 0, 0);
     transition: .5s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .dateButton:hover {
@@ -234,6 +236,7 @@ body {
 
 .dateButton h1 {
     color: #ffed92;
+    cursor: pointer;
 }
 
 #phoneButtonDiv {
