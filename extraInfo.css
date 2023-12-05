@@ -146,6 +146,7 @@
     border-right: .1vw solid white;
     background-color: #000000b5;
     cursor: pointer;
+    text-decoration: none;
   }
   
   .navButton h2 {
@@ -154,6 +155,7 @@
     transition: 0.5s;
     font-size: 1.5vw;
     cursor: inherit;
+    text-decoration: none;
   }
   
   .navButton h2:hover {
