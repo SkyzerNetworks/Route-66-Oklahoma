@@ -201,10 +201,10 @@ body {
     border-radius: .5vw;
     border: .1vw solid #ffed92;
     box-shadow: 0 0 2vw black, 0 0 2vw inset rgb(0, 0, 0);
-    object-fit: cover;
 }
 
 .sectionImage {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
