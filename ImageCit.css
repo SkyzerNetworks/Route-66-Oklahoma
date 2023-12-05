@@ -17,251 +17,290 @@
 /* --------- */
 
 * {
-    padding: 0;
-    margin: 0;
-    cursor: default;
-    overflow: hidden;
-  }
-  
-  /* --------------------------- */
-  /* Body / Background [ BLOCK ] */
-  /* --------------------------- */
-  
-  body {
-    background-color: black;
-  }
-  
-  /* ---------------- */
-  /* Header [ BLOCK ] */
-  /* ---------------- */
-  
+  padding: 0;
+  margin: 0;
+  cursor: default;
+  overflow: hidden;
+}
+
+/* --------------------------- */
+/* Body / Background [ BLOCK ] */
+/* --------------------------- */
+
+body {
+  background-color: black;
+}
+
+/* ---------------- */
+/* Header [ BLOCK ] */
+/* ---------------- */
+
+.headerDiv {
+  width: 100%;
+  height: 15vh;
+}
+
+#headerBlock {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(30, 30, 30, 0.312);
+  border-bottom: .1vh solid white;
+}
+
+#headerBlock:hover {
+  background-color: #827849;
+  border-bottom: 1vh solid white;
+  box-shadow: 0 0 5vh #827849;
+}
+
+.titleDiv {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerTitle {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  width: 100%
+}
+
+.imageDiv {
+  width: 8%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgHeader {
+  width: 5vw;
+  height: 5vw;
+}
+
+#imgHeader:hover {
+  cursor: pointer;
+}
+
+.menuDiv {
+  width: 8%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#menuImg {
+  width: 10vw;
+  height: 10vw;
+}
+
+/* ------------- */
+/* Nav [ BLOCK ] */
+/* ------------- */
+
+.navDiv {
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  visibility: visible;
+  display: flex;
+}
+
+#navBlock {
+  width: 100%;
+  height: 100%;
+  background-color: #38341f;
+  border-top: .1vw solid white;
+  border-bottom: .1vw solid white;
+  display:flex;
+  visibility: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+#navContentHold {
+  width: 99%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+.navButton {
+  width: 15%;
+  height: inherit;
+  padding: .5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: .1vw solid white;
+  border-right: .1vw solid white;
+  background-color: #000000b5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navButton h2 {
+  color: white;
+  text-shadow: 2px 2px 5px white;
+  transition: 0.5s;
+  font-size: 1.5vw;
+  cursor: inherit;
+  text-decoration: none;
+}
+
+.navButton h2:hover {
+  font-size: 2vw;
+  text-shadow: 3px 3px 8px #857b48;
+}
+
+/* --------------------- */
+/* Section (1) [ BLOCK ] */
+/* --------------------- */
+
+.sectionDiv {
+  width: 100%;
+  height: 60vh;
+}
+
+#sectionBlock {
+  width: inherit;
+  height: inherit;
+  background-image: url("https://pixeljoint.com/files/icons/full/desertmockup.png");
+  background-size: 30vw;
+  box-shadow: 0 0 500px black inset;
+  filter: saturate(70%);
+  border-top: .1vw solid white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5vw;
+}
+
+#imageCitDiv {
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+#titleInfo {
+  color: white;
+  width: 30vw;
+  height: 2vw;
+  background-color: rgb(0, 0, 0);
+  border: .1vw solid white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#imageCitText {
+  color: white;
+  transition: .5s;
+  width: 50vw;
+  height: 4vw;
+  background-color: rgb(0, 0, 0);
+  border: .1vw solid white;
+  text-align: center;
+  font-size: 3.3vw;
+  border-radius: 10vw;
+}
+
+#imageCitText:hover {
+  color: gold;
+  text-shadow: 0 0 15px white;
+  font-size: 3.4vw;
+  cursor: pointer;
+}
+
+/* ---------------- */
+/* Footer [ BLOCK ] */
+/* ---------------- */
+
+.footerDiv {
+  width: 100%;
+  height: 20vh;
+}
+
+#footerBlock {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(10deg, #1f1f1f, #6e6344);
+  border-top: .3vh solid white;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media screen and (max-width: 415px) {
+
+  /* Header Block [ TOP ] */
   .headerDiv {
-    width: 100%;
-    height: 15vh;
+      height: 10vh;
   }
-  
-  #headerBlock {
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(30, 30, 30, 0.312);
-    border-bottom: .1vh solid white;
-  }
-  
-  #headerBlock:hover {
-    background-color: #827849;
-    border-bottom: 1vh solid white;
-    box-shadow: 0 0 5vh #827849;
-  }
-  
+
   .titleDiv {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      width: 65%;
   }
-  
+
   #headerTitle {
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    width: 100%
+      font-size: 5vw;
   }
-  
+
   .imageDiv {
-    width: 8%; 
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      width: 18%;
   }
-  
+
   #imgHeader {
-    width: 5vw;
-    height: 5vw;
-  }
-  
-  #imgHeader:hover {
-    cursor: pointer;
+      width: 8vw;
+      height: 8vw;
   }
   
   .menuDiv {
-    width: 8%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
+      visibility: visible;
+      width: 20%;
   }
-  
+
   #menuImg {
-    width: 10vw;
-    height: 10vw;
+      width: 15vw;
+      height: 15vw;
   }
-  
-  /* ------------- */
-  /* Nav [ BLOCK ] */
-  /* ------------- */
-  
+
+  /* Nav Block [ TOP ] */
+
   .navDiv {
-    width: 100%;
-    height: 8vh;
-    background-color: white;
-    visibility: visible;
-    display: flex;
+      visibility: hidden;
+      display: none;
   }
-  
-  #navBlock {
-    width: 100%;
-    height: 100%;
-    background-color: #38341f;
-    border-top: .1vw solid white;
-    border-bottom: .1vw solid white;
-    display:flex;
-    visibility: inherit;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #navContentHold {
-    width: 99%;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3vw;
-  }
-  
-  .navButton {
-    width: 15%;
-    height: inherit;
-    padding: .5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: .1vw solid white;
-    border-right: .1vw solid white;
-    background-color: #000000b5;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .navButton h2 {
-    color: white;
-    text-shadow: 2px 2px 5px white;
-    transition: 0.5s;
-    font-size: 1.5vw;
-    cursor: inherit;
-    text-decoration: none;
-  }
-  
-  .navButton h2:hover {
-    font-size: 2vw;
-    text-shadow: 3px 3px 8px #857b48;
-  }
-  
-  /* --------------------- */
-  /* Section (1) [ BLOCK ] */
-  /* --------------------- */
-  
+
+  /* Section Block [ MIDDLE ] */
+
   .sectionDiv {
-    width: 100%;
-    height: 60vh;
+      position: relative;
+      top: 0vh;
   }
-  
-  #sectionBlock {
-    width: inherit;
-    height: inherit;
-    background-image: url("https://pixeljoint.com/files/icons/full/desertmockup.png");
-    background-size: 30vw;
-    box-shadow: 0 0 500px black inset;
-    filter: saturate(70%);
-    border-top: .1vw solid white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5vw;
-  }
-  
-  /* ---------------- */
-  /* Footer [ BLOCK ] */
-  /* ---------------- */
-  
+
+  /* Footer Block [ BOTTOM ] */
+
   .footerDiv {
-    width: 100%;
-    height: 20vh;
+      height: 29.8vh;
   }
-  
+
   #footerBlock {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(10deg, #1f1f1f, #6e6344);
-    border-top: .3vh solid white;
+      border-top: .1vh solid white;
   }
-  
-  /* ------------- */
-  /* MEDIA QUERIES */
-  /* ------------- */
-  
-  @media screen and (max-width: 415px) {
-  
-    /* Header Block [ TOP ] */
-    .headerDiv {
-        height: 10vh;
-    }
-  
-    .titleDiv {
-        width: 65%;
-    }
-  
-    #headerTitle {
-        font-size: 5vw;
-    }
-  
-    .imageDiv {
-        width: 18%;
-    }
-  
-    #imgHeader {
-        width: 8vw;
-        height: 8vw;
-    }
-    
-    .menuDiv {
-        visibility: visible;
-        width: 20%;
-    }
-  
-    #menuImg {
-        width: 15vw;
-        height: 15vw;
-    }
-  
-    /* Nav Block [ TOP ] */
-  
-    .navDiv {
-        visibility: hidden;
-        display: none;
-    }
-  
-    /* Section Block [ MIDDLE ] */
-  
-    .sectionDiv {
-        position: relative;
-        top: 0vh;
-    }
-  
-    /* Footer Block [ BOTTOM ] */
-  
-    .footerDiv {
-        height: 29.8vh;
-    }
-  
-    #footerBlock {
-        border-top: .1vh solid white;
-    }
-  }
+}
