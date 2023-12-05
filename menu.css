@@ -58,6 +58,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .infoButton h1 {
@@ -72,6 +73,7 @@ body {
 .infoButton h1:hover {
     font-size: 5.5vh;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
