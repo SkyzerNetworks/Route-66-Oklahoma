@@ -208,24 +208,28 @@ body {
 }
 
 #imageCitText {
-  color: white;
   transition: .5s;
   width: 50vw;
   height: 4vw;
   background-color: rgb(0, 0, 0);
   border: .1vw solid white;
   text-align: center;
-  font-size: 3.3vw;
   border-radius: 10vw;
 }
 
-#imageCitText:hover {
+#imageCitText a {
+  color: white;
+  transition: 0.5s;
+  font-size: 3.3vw;
+  text-decoration: none;
+}
+
+#imageCitText a:hover {
   color: gold;
   text-shadow: 0 0 15px white;
   font-size: 3.4vw;
   cursor: pointer;
 }
-
 /* ---------------- */
 /* Footer [ BLOCK ] */
 /* ---------------- */
